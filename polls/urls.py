@@ -19,4 +19,11 @@ from polls import views
 
 urlpatterns = [
     url(r'^$', views.index),
+    url(r'^index/$', views.index),
+    url(r'^about/$', views.about),
+
+
+
+    url(r'^api/get/table/$', views.get_exam_table),
+
 ]

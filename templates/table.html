@@ -1,0 +1,22 @@
+<table class="table table-bordered table-hover rounded corner">
+        <tbody>
+            <tr>
+                <th>姓名</th>
+                <td>{{ st.name }}</td>
+            </tr>
+            <tr>
+                <th>学号</th>
+                <td>{{ st.num }}</td>
+            </tr>
+            <tr>
+                <th>联系方式</th>
+                <td>{{ st.phone }}</td>
+            </tr>
+        {% for i in st.data %}
+        <tr>
+            <th>{{ i.class }}</th>
+            <td>{{ i.score }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+</table>
